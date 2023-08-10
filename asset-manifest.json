@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/seansally_wedding/static/css/main.99790566.css",
-    "main.js": "/seansally_wedding/static/js/main.33f6a749.js",
-    "static/js/787.1edce37b.chunk.js": "/seansally_wedding/static/js/787.1edce37b.chunk.js",
-    "index.html": "/seansally_wedding/index.html",
-    "main.99790566.css.map": "/seansally_wedding/static/css/main.99790566.css.map",
-    "main.33f6a749.js.map": "/seansally_wedding/static/js/main.33f6a749.js.map",
-    "787.1edce37b.chunk.js.map": "/seansally_wedding/static/js/787.1edce37b.chunk.js.map"
+    "main.css": "./static/css/main.99790566.css",
+    "main.js": "./static/js/main.e36efa80.js",
+    "static/js/787.1edce37b.chunk.js": "./static/js/787.1edce37b.chunk.js",
+    "index.html": "./index.html",
+    "main.99790566.css.map": "./static/css/main.99790566.css.map",
+    "main.e36efa80.js.map": "./static/js/main.e36efa80.js.map",
+    "787.1edce37b.chunk.js.map": "./static/js/787.1edce37b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.99790566.css",
-    "static/js/main.33f6a749.js"
+    "static/js/main.e36efa80.js"
   ]
 }
