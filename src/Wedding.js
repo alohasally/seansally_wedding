@@ -58,15 +58,15 @@ export default function Wedding() {
         </div>
         <div className="space-y-4 flex flex-col items-start justify-center">
           <div className="space-x-3">
-            <Text>에리케 플로레스</Text>
-            <Text>테리 플로레스</Text>
-            <Text className="text-xs">의 아들</Text>
+            <Text className="text-xs">에리케 플로레스</Text>
+            <Text className="text-xs pr-1">테리 플로레스</Text>
+            <Text className="text-white/80 text-xs">의 아들</Text>
             <Text>션</Text>
           </div>
           <div className="space-x-2">
-            <Text className="px-6">이운형</Text>
-            <Text className="px-7">이선옥</Text>
-            <Text className="px-2 text-xs">의 딸</Text>
+            <Text className="px-6 text-xs">이운형</Text>
+            <Text className="px-5 text-xs">이선옥</Text>
+            <Text className="px-2 text-xs text-white/80">의 딸</Text>
             <Text>선형</Text>
           </div>
         </div>

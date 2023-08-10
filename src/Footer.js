@@ -7,6 +7,14 @@ const Text = tw.text`
 `;
 
 export default function Footer() {
+  const handleCopy = async (text) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      alert("주소가 복사되었습니다.");
+    } catch (e) {
+      alert("복사에 실패하였습니다");
+    }
+  };
   return (
     <div>
       {/*  Location */}
@@ -14,35 +22,76 @@ export default function Footer() {
         <img className="h-12 mx-auto" src="./img/text_6.svg"></img>
         <div className="text-sm text-center flex flex-col pb-10 space-y-3">
           <Text>서울시 종로구 북촌로1길 42 30-4 핸더스</Text>
-          <p className="bg-pink-200 w-[80px] mx-auto text-xs text-black py-1 rounded-sm">
-            복사하기
-          </p>
+          <button
+            onClick={() => handleCopy("서울시 종로구 북촌로1길 42 30-4")}
+            className="bg-pink-200 w-[80px] mx-auto text-xs text-black py-1 rounded-sm"
+          >
+            주소복사
+          </button>
           <KakaoMap />
+          <div className="w-[252px] mx-auto space-y-6 pt-8">
+            <div className="flex flex-row items-center justify-between">
+              <Text className="text-xs">대중교통</Text>
+              <Text className="w-[190px] text-left">
+                지하철 3호선 안국역 1번출구 해당 건물 끼고 우회전하여 직진 도보
+                1-2분 소요
+              </Text>
+            </div>
+            <div className="flex flex-row items-center justify-between">
+              <Text className="text-xs">자가용</Text>
+              <Text className="w-[190px] text-left">
+                해영회관점 주차장으로 오셔서 주차하시면 됩니다.
+              </Text>
+            </div>
+          </div>
         </div>
         <div className="text-sm text-center flex flex-col pb-10 space-y-2">
           <p className="text-xs">주차안내</p>
           <div className="w-full h-[208px] overflow-hidden flex items-end justify-center">
             <img className="" src="./img/location.svg"></img>
           </div>
-          <Text>서울시 종로구 북촌로1길 42 30-4 </Text>
+          <Text>
+            서울 종로구 안국동 141
+            <br /> 해영회관점 주차장
+          </Text>
+          <button
+            onClick={() => handleCopy("서울 종로구 안국동 141")}
+            className="bg-pink-100 w-[60px] mx-auto text-[10px] text-black rounded-sm"
+          >
+            주소복사
+          </button>
         </div>
       </div>
       {/*  Information */}
       <div div id="7" className="py-12 space-y-4">
         <img className="h-12 mx-auto" src="./img/text_7.svg"></img>
-        <div className="text-sm text-center flex flex-col pb-10 space-y-2">
+        <div className="text-sm text-center flex flex-col pb-10 space-y-4">
           <p className="text-xs">안내사항</p>
+          <span className="block border w-6 border-white/40 mx-auto"></span>
           <Text>
-            피로연은 예식 끝나고
+            피로연은 예식 끝나고 종각역 근처 이자카야에서
             <br /> 6시부터 9시까지 진행될 예정입니다
           </Text>
-        </div>
-        <div className="w-full h-[200px] overflow-hidden flex items-end justify-center">
-          <img className="w-full" src="./img/01.png"></img>
+          <Text className="text-xs text-white/60">
+            시간 여유가 되시면 자유롭게 참석하시면 됩니다
+          </Text>
+          <div className="w-full h-[200px] overflow-hidden flex items-end justify-center">
+            <img className="w-full" src="./img/11.png"></img>
+          </div>
+          <Text>
+            서울 종로구 종로10길 16 2층
+            <br /> 종각 이자카야 나무
+          </Text>
+          <button
+            onClick={() => handleCopy("서울 종로구 종로10길 16")}
+            className="bg-pink-100 w-[60px] mx-auto text-[10px] text-black rounded-sm"
+          >
+            주소복사
+          </button>
         </div>
       </div>
       {/*  Thanks */}
-      <div className="py-12 space-y-2">
+      <div className="pt-2 pb-12 space-y-2">
         <img className="h-12 mx-auto" src="./img/text_8.svg"></img>
         <div className="text-sm text-center flex flex-col pb-2 space-y-2">
           <Text>소중한 발걸음 기다리겠습니다</Text>
