@@ -35,7 +35,7 @@ const images = [
 
 export default function Story() {
   return (
-    <div className="py-4 space-y-8">
+    <div id="3" className="py-4 space-y-8">
       <img className="h-12 mx-auto" src="./img/text_3.svg"></img>
       <div className="flex items-center justify-center">
         <img className="w-[160px]" src="./img/baby_1.png"></img>
@@ -48,7 +48,7 @@ export default function Story() {
         ></img>
         <div className="text-sm text-center flex flex-col pb-10">
           <Text>
-            미국과 한국이라는
+            저희는 미국과 한국이라는
             <br /> 지구 반대편에서 태어나고 자라서
           </Text>
         </div>
@@ -65,11 +65,11 @@ export default function Story() {
               <img className="object-cover" src="./img/img_1.png" alt=""></img>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="flex items-center justify-center">
+          {/* <SwiperSlide className="flex items-center justify-center">
             <div className="rounded-md w-full h-full">
               <img className="object-cover" src="./img/img_2.png" alt=""></img>
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
           <SwiperSlide className="flex items-center justify-center">
             <div className="rounded-md w-full h-full">
               <img className="object-cover" src="./img/img_3.png" alt=""></img>
@@ -111,20 +111,20 @@ export default function Story() {
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex items-center justify-center">
-            <div className="rounded-md w-full h-full">
-              <img className="object-cover" src="./img/img_11.png" alt=""></img>
+            <div className="rounded-md w-full h-full overflow-hidden">
+              <img className="object-cover" src="./img/img_13.png" alt=""></img>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="flex items-center justify-center">
+          {/* <SwiperSlide className="flex items-center justify-center">
             <div className="rounded-md w-full h-full">
               <img className="object-cover" src="./img/img_12.png" alt=""></img>
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
       </div>
       <div className="text-sm text-center flex flex-col pb-10">
         <Text>
-          태국 치앙마이에서 만나 <br />
+          태국 치앙마이에서 만났고 <br />
           어느덧 5년이 흘렀습니다. <br />
           그리고 이제 인생을 함께 하기로 <br />
           약속했습니다.

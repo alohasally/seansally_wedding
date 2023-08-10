@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="w-full text-white font-nanum">
       <Nav />
-      <Banner />
+      {/* <Banner /> */}
       <Invitation />
       <Story />
       <Wedding />

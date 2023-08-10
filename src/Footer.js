@@ -1,5 +1,6 @@
 import React from "react";
 import tw from "tailwind-styled-components";
+import KakaoMap from "./KakaoMap";
 
 const Text = tw.text`
     text-sm leading-6
@@ -9,28 +10,25 @@ export default function Footer() {
   return (
     <div>
       {/*  Location */}
-      <div className="py-12 space-y-4">
+      <div id="6" className="py-12 space-y-4">
         <img className="h-12 mx-auto" src="./img/text_6.svg"></img>
-        <div className="text-sm text-center flex flex-col pb-10 space-y-2">
-          <Text>
-            서울시 종로구 북촌로1길 42 30-4 <br />
-            핸더스
-          </Text>
+        <div className="text-sm text-center flex flex-col pb-10 space-y-3">
+          <Text>서울시 종로구 북촌로1길 42 30-4 핸더스</Text>
           <p className="bg-pink-200 w-[80px] mx-auto text-xs text-black py-1 rounded-sm">
-            복사안내
+            복사하기
           </p>
+          <KakaoMap />
         </div>
-        <div className="w-full h-[208px] bg-slate-200"></div>
         <div className="text-sm text-center flex flex-col pb-10 space-y-2">
           <p className="text-xs">주차안내</p>
+          <div className="w-full h-[208px] overflow-hidden flex items-end justify-center">
+            <img className="" src="./img/location.svg"></img>
+          </div>
           <Text>서울시 종로구 북촌로1길 42 30-4 </Text>
-        </div>
-        <div className="w-full h-[208px] overflow-hidden flex items-end justify-center">
-          <img className="" src="./img/location.svg"></img>
         </div>
       </div>
       {/*  Information */}
-      <div className="py-12 space-y-4">
+      <div div id="7" className="py-12 space-y-4">
         <img className="h-12 mx-auto" src="./img/text_7.svg"></img>
         <div className="text-sm text-center flex flex-col pb-10 space-y-2">
           <p className="text-xs">안내사항</p>

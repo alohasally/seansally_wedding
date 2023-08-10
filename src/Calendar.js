@@ -42,8 +42,11 @@ export default function Calendar() {
   }, []);
 
   return (
-    <div className="py-12 space-y-4">
+    <div id="4" className="py-12 space-y-4">
       <img className="h-12 mx-auto" src="./img/text_4.svg"></img>
+      <div className="flex justify-center items-center">
+        <Text className="">2023년 10월 3일 오후 1시</Text>
+      </div>
       <div className="flex items-center justify-center">
         <img className="w-[320px]" src="./img/calendar.svg"></img>
       </div>
@@ -66,11 +69,7 @@ export default function Calendar() {
         </div>
       </div>
       <div className="text-sm text-center flex flex-col pb-10">
-        <Text>
-          션과 선형의 결혼식이
-          <br />
-          {days}일 남았습니다
-        </Text>
+        <Text>션과 선형의 결혼식이 {days}일 남았습니다</Text>
       </div>
     </div>
   );
