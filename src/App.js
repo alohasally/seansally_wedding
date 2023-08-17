@@ -11,7 +11,7 @@ import Footer from "./Footer";
 
 function App() {
   return (
-    <div className="w-full overflow-x-scroll text-white font-nanum">
+    <div className="w-full text-white font-nanum">
       <Nav />
       <Invitation />
       <Story />

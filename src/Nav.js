@@ -33,7 +33,7 @@ export default function Nav() {
         src="./img/text_1.svg"
       ></img>
       <div
-        className={`z-999 top-0 left-0 bg-black/90 w-full h-[500px] transition-all ease-in-out ${
+        className={`z-999 top-0 left-0 bg-black/90 w-full h-[500px] transition-all ease-in-out fixed ${
           isOpen ? "absolute" : "hidden"
         }`}
       >
