@@ -14,7 +14,7 @@ export default function Nav() {
 
   return (
     <div id="1" className="relative mx-auto">
-      <div className="z-50 top-0 left-[50%] right-[50%] -translate-x-1/2 -translate-y-1/2 w-[390px] h-10 bg-black/80 fixed">
+      <div className="z-50 top-0 left-[50%] right-[50%] -translate-x-1/2  w-[390px] h-10 bg-black/80 fixed">
         <div className="px-2 py-2 flex justify-between">
           <img src="./img/sean_Sally.svg"></img>
           <img
@@ -23,18 +23,9 @@ export default function Nav() {
           ></img>
         </div>
       </div>
-      <div className="absolute w-full bottom-6 px-2 flex flex-row items-end justify-between">
-        <img src="./img/flower/flower_1.svg"></img>
-        <img src="./img/flower/flower_2.svg"></img>
-      </div>
-      <img className="h-[600px]" src="./img/00.webp"></img>
-      <img
-        className="absolute top-[85px] left-[50%] -translate-x-[50%]"
-        src="./img/text_1.svg"
-      ></img>
       <div
-        className={`z-999 top-0 left-0 bg-black/90 w-full h-[500px] transition-all ease-in-out fixed ${
-          isOpen ? "absolute" : "hidden"
+        className={`z-999 top-[40px] left-[50%] -translate-x-1/2 w-[390px] bg-black/90  h-[500px] transition-all ease-in-out ${
+          isOpen ? "fixed" : "hidden"
         }`}
       >
         <div className="flex flex-col items-center justify-center space-y-6 my-[80px]">
@@ -47,6 +38,15 @@ export default function Nav() {
           <Text href="#7">Information</Text>
         </div>
       </div>
+      <div className="absolute w-full bottom-6 px-2 flex flex-row items-end justify-between">
+        <img src="./img/flower/flower_1.svg"></img>
+        <img src="./img/flower/flower_2.svg"></img>
+      </div>
+      <img className="h-[600px]" src="./img/00.webp"></img>
+      <img
+        className="absolute top-[85px] left-[50%] -translate-x-[50%]"
+        src="./img/text_1.svg"
+      ></img>
     </div>
   );
 }
