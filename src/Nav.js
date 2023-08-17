@@ -13,8 +13,8 @@ export default function Nav() {
   };
 
   return (
-    <div id="1" className="mx-auto fixed">
-      <div className="absolute z-50 top-0 left-0 w-full h-10 bg-black/80">
+    <div id="1" className="relative mx-auto">
+      <div className="z-50 top-0 left-0 w-full h-10 bg-black/80 fixed">
         <div className="px-2 py-2 flex justify-between">
           <img src="./img/sean_Sally.svg"></img>
           <img
