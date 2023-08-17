@@ -48,7 +48,7 @@ export default function Footer() {
         <div className="text-sm text-center flex flex-col pb-10 space-y-2">
           <p className="text-xs">주차안내</p>
           <div className="w-full h-[208px] overflow-hidden flex items-end justify-center">
-            <img className="" src="./img/location.svg"></img>
+            <img src="./img/location.svg" alt="parking"></img>
           </div>
           <Text>
             서울 종로구 안국동 141
