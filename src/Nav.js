@@ -13,7 +13,7 @@ export default function Nav() {
   };
 
   return (
-    <div id="1" className="relative mx-auto">
+    <div id="1" className="mx-auto fixed">
       <div className="absolute z-50 top-0 left-0 w-full h-10 bg-black/80">
         <div className="px-2 py-2 flex justify-between">
           <img src="./img/sean_Sally.svg"></img>
@@ -27,7 +27,7 @@ export default function Nav() {
         <img src="./img/flower/flower_1.svg"></img>
         <img src="./img/flower/flower_2.svg"></img>
       </div>
-      <img className="h-fit" src="./img/00.png"></img>
+      <img className="h-fit" src="./img/00.webp"></img>
       <img
         className="absolute top-[85px] left-[50%] -translate-x-[50%]"
         src="./img/text_1.svg"

@@ -48,7 +48,7 @@ export default function SlidePhotos() {
             <div className="rounded-md w-full h-full">
               <img
                 className="rounded-md object-cover"
-                src="./img/03.png"
+                src="./img/03.webp"
                 alt=""
               ></img>
             </div>
@@ -57,7 +57,7 @@ export default function SlidePhotos() {
             <div className="rounded-md w-full h-full">
               <img
                 className="rounded-md object-cover"
-                src="./img/04.png"
+                src="./img/04.webp"
                 alt=""
               ></img>
             </div>
@@ -66,7 +66,7 @@ export default function SlidePhotos() {
             <div className="rounded-md w-full h-full">
               <img
                 className="rounded-md object-cover"
-                src="./img/05.png"
+                src="./img/05.webp"
                 alt=""
               ></img>
             </div>
@@ -75,7 +75,7 @@ export default function SlidePhotos() {
             <div className="rounded-md w-full h-full">
               <img
                 className="rounded-md object-cover"
-                src="./img/06.png"
+                src="./img/06.webp"
                 alt=""
               ></img>
             </div>
@@ -84,7 +84,7 @@ export default function SlidePhotos() {
             <div className="rounded-md w-full h-full">
               <img
                 className="rounded-md object-cover"
-                src="./img/07.png"
+                src="./img/07.webp"
                 alt=""
               ></img>
             </div>
@@ -93,7 +93,7 @@ export default function SlidePhotos() {
             <div className="rounded-md w-full h-full">
               <img
                 className="rounded-md object-cover"
-                src="./img/08.png"
+                src="./img/08.webp"
                 alt=""
               ></img>
             </div>
@@ -102,7 +102,7 @@ export default function SlidePhotos() {
             <div className="rounded-md w-full h-full">
               <img
                 className="rounded-md object-cover"
-                src="./img/09.png"
+                src="./img/09.webp"
                 alt=""
               ></img>
             </div>

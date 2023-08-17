@@ -76,7 +76,7 @@ export default function Footer() {
             시간 여유가 되시면 자유롭게 참석하시면 됩니다
           </Text>
           <div className="w-full h-[200px] overflow-hidden flex items-end justify-center">
-            <img className="w-full" src="./img/11.png"></img>
+            <img className="w-full" src="./img/11.webp"></img>
           </div>
           <Text>
             서울 종로구 종로10길 16 2층
@@ -101,7 +101,7 @@ export default function Footer() {
             className="absolute top-[40px] left-[50%] -translate-x-[50%] "
             src="./img/text_9.svg"
           ></img>
-          <img className="object-bottom" src="./img/10.png"></img>
+          <img className="object-bottom" src="./img/10.webp"></img>
         </div>
         <p className="text-xs text-center">We're waiting for you</p>
       </div>

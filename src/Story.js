@@ -16,30 +16,15 @@ const Text = tw.text`
     text-sm leading-6
 `;
 
-const images = [
-  "img_1.png",
-  "img_2.png",
-  "img_3.png",
-  //   "./img/img_2.png",
-  //   "./img/img_3.png",
-  //   "./img/img_4.png",
-  //   "./img/img_5.png",
-  //   "./img/img_6.png",
-  //   "./img/img_7.png",
-  //   "./img/img_8.png",
-  //   "./img/img_9.png",
-  //   "./img/img_10.png",
-  //   "./img/img_11.png",
-  //   "./img/img_12.png",
-];
+const images = ["img_1.webp", "img_2.webp", "img_3.webp"];
 
 export default function Story() {
   return (
     <div id="3" className="py-4 space-y-8">
       <img className="h-12 mx-auto" src="./img/text_3.svg"></img>
       <div className="flex items-center justify-center">
-        <img className="w-[160px]" src="./img/baby_1.png"></img>
-        <img className="w-[160px]" src="./img/baby_2.png"></img>
+        <img className="w-[160px]" src="./img/baby_1.webp"></img>
+        <img className="w-[160px]" src="./img/baby_2.webp"></img>
       </div>
       <div className="relative">
         <img
@@ -62,62 +47,70 @@ export default function Story() {
         >
           <SwiperSlide className="flex items-center justify-center">
             <div className="rounded-md w-full h-full">
-              <img className="object-cover" src="./img/img_1.png" alt=""></img>
+              <img className="object-cover" src="./img/img_1.webp" alt=""></img>
             </div>
           </SwiperSlide>
           {/* <SwiperSlide className="flex items-center justify-center">
             <div className="rounded-md w-full h-full">
-              <img className="object-cover" src="./img/img_2.png" alt=""></img>
+              <img className="object-cover" src="./img/img_2.webp" alt=""></img>
             </div>
           </SwiperSlide> */}
           <SwiperSlide className="flex items-center justify-center">
             <div className="rounded-md w-full h-full">
-              <img className="object-cover" src="./img/img_3.png" alt=""></img>
+              <img className="object-cover" src="./img/img_3.webp" alt=""></img>
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex items-center justify-center">
             <div className="rounded-md w-full h-full">
-              <img className="object-cover" src="./img/img_4.png" alt=""></img>
+              <img className="object-cover" src="./img/img_4.webp" alt=""></img>
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex items-center justify-center">
             <div className="rounded-md w-full h-full">
-              <img className="object-cover" src="./img/img_5.png" alt=""></img>
+              <img className="object-cover" src="./img/img_5.webp" alt=""></img>
             </div>
           </SwiperSlide>
           {/* <SwiperSlide className="flex items-center justify-center">
             <div className="rounded-md w-full h-full">
-              <img className="object-cover" src="./img/img_6.png" alt=""></img>
+              <img className="object-cover" src="./img/img_6.webp" alt=""></img>
             </div>
           </SwiperSlide> */}
           <SwiperSlide className="flex items-center justify-center">
             <div className="rounded-md w-full h-full">
-              <img className="object-cover" src="./img/img_7.png" alt=""></img>
+              <img className="object-cover" src="./img/img_7.webp" alt=""></img>
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex items-center justify-center">
             <div className="rounded-md w-full h-full">
-              <img className="object-cover" src="./img/img_8.png" alt=""></img>
+              <img className="object-cover" src="./img/img_8.webp" alt=""></img>
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex items-center justify-center">
             <div className="rounded-md w-full h-full">
-              <img className="object-cover" src="./img/img_9.png" alt=""></img>
+              <img className="object-cover" src="./img/img_9.webp" alt=""></img>
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex items-center justify-center">
             <div className="rounded-md w-full h-full">
-              <img className="object-cover" src="./img/img_10.png" alt=""></img>
+              <img
+                className="object-cover"
+                src="./img/img_10.webp"
+                alt=""
+              ></img>
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex items-center justify-center">
             <div className="rounded-md w-full h-full overflow-hidden">
-              <img className="object-cover" src="./img/img_13.png" alt=""></img>
+              <img
+                className="object-cover"
+                src="./img/img_13.webp"
+                alt=""
+              ></img>
             </div>
           </SwiperSlide>
           {/* <SwiperSlide className="flex items-center justify-center">
             <div className="rounded-md w-full h-full">
-              <img className="object-cover" src="./img/img_12.png" alt=""></img>
+              <img className="object-cover" src="./img/img_12.webp" alt=""></img>
             </div>
           </SwiperSlide> */}
         </Swiper>
@@ -150,7 +143,7 @@ const Images = () => {
               <img
                 className="object-cover"
                 key={i}
-                src="./img/img_1.png"
+                src="./img/img_1.webp"
                 alt=""
               ></img>
             </div>
