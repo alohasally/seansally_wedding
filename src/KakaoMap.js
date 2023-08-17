@@ -23,7 +23,7 @@ export default function KakaoMap() {
     marker.setMap(map);
 
     const iwContent =
-        '<div class="w-full"><div class="text-black bg-pink-100 text-center font-semibold text-sm w-[180px]">핸더스 Handus<br><a href="https://map.kakao.com/link/map/Handus_Sean&Sally,37.577411, 126.984271" class="bg-pink-200 text-xs" style="color:black" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/Handus_Sean&Sally,37.577411, 126.984271" class="bg-pink-200 text-xs" style="color:black" target="_blank">길찾기</a></div></div>',
+        '<div class="w-full"><div class="text-black bg-white text-center font-semibold text-xs w-[180px]">핸더스 Handus<br><a href="https://map.kakao.com/link/map/Handus_Sean&Sally,37.577411, 126.984271" class="bg-pink-200 text-xs" style="color:black" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/Handus_Sean&Sally,37.577411, 126.984271" class="bg-pink-200 text-xs" style="color:black" target="_blank">길찾기</a></div></div>',
       // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
       iwPosition = new kakao.maps.LatLng(37.577411, 126.984271); //인포윈도우 표시 위치입니다
 
