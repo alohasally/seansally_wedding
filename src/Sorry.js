@@ -11,7 +11,7 @@ export default function Sorry() {
       <div className="relative w-[280px] flex flex-col items-center justify-center space-y-3">
         <div className="w-[280px] rounded-md">
           <img
-            className="h-[500px] object-center object-cover"
+            className="h-[400px] object-center rounded-lg"
             src="./img/12.webp"
           ></img>
         </div>

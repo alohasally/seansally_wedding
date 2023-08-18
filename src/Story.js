@@ -92,11 +92,7 @@ export default function Story() {
           </SwiperSlide>
           <SwiperSlide className="flex items-center justify-center">
             <div className="rounded-md w-full h-full">
-              <img
-                className="object-cover"
-                src="./img/img_10.webp"
-                alt=""
-              ></img>
+              <img className="object-cover" src="./img/img_6.webp" alt=""></img>
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex items-center justify-center">
