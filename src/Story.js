@@ -9,7 +9,7 @@ import "swiper/css/effect-cards";
 import "./index.css";
 
 // import required modules
-import { EffectCards } from "swiper/modules";
+import { EffectCards, Autoplay } from "swiper/modules";
 import tw from "tailwind-styled-components";
 
 const Text = tw.text`
@@ -20,7 +20,7 @@ const images = ["img_1.webp", "img_2.webp", "img_3.webp"];
 
 export default function Story() {
   return (
-    <div id="3" className="py-4 space-y-8">
+    <div id="3" className="py-4 space-y-6">
       <img className="h-12 mx-auto" src="./img/text_3.svg"></img>
       <div className="flex items-center justify-center">
         <img className="w-[160px]" src="./img/baby_1.webp"></img>
@@ -33,7 +33,7 @@ export default function Story() {
         ></img>
         <div className="text-sm text-center flex flex-col pb-10">
           <Text>
-            저희는 미국과 한국이라는
+            저희는 미국 미시간과 한국 서울이라는
             <br /> 지구 반대편에서 태어나고 자라서
           </Text>
         </div>
@@ -115,6 +115,11 @@ export default function Story() {
           </SwiperSlide> */}
         </Swiper>
       </div>
+      <div className="text-center flex flex-col">
+        <p className="text-xs text-white/70">
+          (이미지는 슬라이드해서 넘겨주세요)
+        </p>
+      </div>
       <div className="text-sm text-center flex flex-col pb-10">
         <Text>
           태국 치앙마이에서 만났고 <br />
@@ -133,8 +138,11 @@ const Images = () => {
     <Swiper
       effect={"cards"}
       grabCursor={true}
-      modules={[EffectCards]}
+      modules={[EffectCards, Autoplay]}
       className="w-[240px] h-[300px]"
+      initialSlide={3}
+      centeredSlides={true}
+      autoplay={true}
     >
       {images.map((image, i) => {
         <div key={i} className="rounded-[8px] flex justify-center items-center">

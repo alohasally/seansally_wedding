@@ -8,7 +8,7 @@ import "swiper/css/effect-creative";
 import "swiper/css/navigation";
 
 // import required modules
-import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+import { FreeMode, Navigation, Thumbs, Autoplay } from "swiper/modules";
 
 export default function SlidePhotos() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -30,10 +30,11 @@ export default function SlidePhotos() {
           pagination={{
             clickable: true,
           }}
+          autoplay={true}
           // thumbs={{ swiper: thumbsSwiper }}
           spaceBetween={10}
           thumbs={{ swiper: thumbsSwiper }}
-          modules={[FreeMode, Navigation, Thumbs]}
+          modules={[FreeMode, Navigation, Thumbs, Autoplay]}
           creativeEffect={{
             prev: {
               shadow: true,
@@ -79,6 +80,15 @@ export default function SlidePhotos() {
             <div className="rounded-md w-full h-full">
               <img
                 className="rounded-md object-cover"
+                src="./img/09.webp"
+                alt=""
+              ></img>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="flex items-center justify-center">
+            <div className="rounded-md w-full h-full">
+              <img
+                className="rounded-md object-cover"
                 src="./img/06.webp"
                 alt=""
               ></img>
@@ -102,16 +112,8 @@ export default function SlidePhotos() {
               ></img>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="flex items-center justify-center">
-            <div className="rounded-md w-full h-full">
-              <img
-                className="rounded-md object-cover"
-                src="./img/09.webp"
-                alt=""
-              ></img>
-            </div>
-          </SwiperSlide>
         </Swiper>
+        <div className="py-1"></div>
         <Swiper
           onSwiper={setThumbsSwiper}
           spaceBetween={10}
@@ -152,6 +154,15 @@ export default function SlidePhotos() {
             <div className="rounded-md w-full h-full">
               <img
                 className="rounded-md object-cover"
+                src="./img/09.webp"
+                alt=""
+              ></img>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="flex items-center justify-center">
+            <div className="rounded-md w-full h-full">
+              <img
+                className="rounded-md object-cover"
                 src="./img/06.webp"
                 alt=""
               ></img>
@@ -171,15 +182,6 @@ export default function SlidePhotos() {
               <img
                 className="rounded-md object-cover"
                 src="./img/08.webp"
-                alt=""
-              ></img>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="flex items-center justify-center">
-            <div className="rounded-md w-full h-full">
-              <img
-                className="rounded-md object-cover"
-                src="./img/09.webp"
                 alt=""
               ></img>
             </div>

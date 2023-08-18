@@ -6,6 +6,7 @@ import Invitation from "./Invitation";
 import Story from "./Story";
 import Calendar from "./Calendar";
 import Wedding from "./Wedding";
+import Sorry from "./Sorry";
 import SlidePhotos from "./SlidePhotos";
 import Footer from "./Footer";
 
@@ -16,8 +17,9 @@ function App() {
       <Invitation />
       <Story />
       <Wedding />
-      <Calendar />
       <SlidePhotos />
+      <Calendar />
+      <Sorry />
       <Footer />
       {/* <Routes>
         <Route path="/" element={<Invitation />} />

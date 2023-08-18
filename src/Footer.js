@@ -45,10 +45,15 @@ export default function Footer() {
             </div>
           </div>
         </div>
+
         <div className="text-sm text-center flex flex-col pb-10 space-y-2">
           <p className="text-xs">주차안내</p>
           <div className="w-full h-[208px] overflow-hidden flex items-end justify-center">
-            <img src="./img/location.svg" alt="parking"></img>
+            <img
+              className="h-[208px]"
+              src="./img/location.svg"
+              alt="parkinglot"
+            />
           </div>
           <Text>
             서울 종로구 안국동 141
@@ -61,6 +66,21 @@ export default function Footer() {
             주소복사
           </button>
         </div>
+        <div className="text-sm text-center flex flex-col space-y-2">
+          <p className="text-xs">식장안내</p>
+          <div className="w-full h-[208px] overflow-hidden flex items-end justify-center">
+            <img
+              className="h-[208px] rounded-lg"
+              src="./img/handus.webp"
+              alt="handus"
+            />
+          </div>
+          <Text className="text-xs leading-6">
+            식장인 핸더스는 작은 한옥이기 때문에
+            <br />
+            화장실이 남녀 구분없이 1개라는 점 참고해주세요
+          </Text>
+        </div>
       </div>
       {/*  Information */}
       <div div id="7" className="py-12 space-y-4">
@@ -69,7 +89,7 @@ export default function Footer() {
           <p className="text-xs">안내사항</p>
           <span className="block border w-6 border-white/40 mx-auto"></span>
           <Text>
-            피로연은 예식 끝나고 종각역 근처 이자카야에서
+            피로연은 예식 끝나고 종각역 근처 이자카야 나무 에서
             <br /> 6시부터 9시까지 진행될 예정입니다
           </Text>
           <Text className="text-xs text-white/60">
@@ -88,6 +108,9 @@ export default function Footer() {
           >
             주소복사
           </button>
+          <Text className="text-xs text-white/60">
+            예식장 핸더스에서 도보 10~15분 소요
+          </Text>
         </div>
       </div>
       {/*  Thanks */}

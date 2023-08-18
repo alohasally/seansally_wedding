@@ -23,7 +23,7 @@ export default function Nav() {
           ></img>
         </div>
         <div
-          className={`max-w-[420px] bg-black/90  h-[500px] transition-all ease-in-out hidden${
+          className={`max-w-[420px] bg-black/90 h-fit transition-all ease-in-out hidden${
             isOpen ? "fixed !z-999" : ""
           }`}
         >
