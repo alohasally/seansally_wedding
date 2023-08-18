@@ -51,7 +51,7 @@ export default function Footer() {
           <div className="w-full h-[208px] overflow-hidden flex items-end justify-center">
             <img
               className="h-[208px]"
-              src="./img/location.svg"
+              src="./img/location.webp"
               alt="parkinglot"
             />
           </div>
