@@ -24,7 +24,7 @@ export default function Footer() {
           <Text>서울시 종로구 북촌로1길 42 30-4 핸더스</Text>
           <button
             onClick={() => handleCopy("서울시 종로구 북촌로1길 42 30-4")}
-            className="bg-pink-200 w-[80px] mx-auto text-xs text-black py-1 rounded-sm"
+            className="bg-pink-200 w-[80px] mx-auto text-xs text-black py-2 rounded-sm"
           >
             주소복사
           </button>
@@ -61,7 +61,7 @@ export default function Footer() {
           </Text>
           <button
             onClick={() => handleCopy("서울 종로구 안국동 141")}
-            className="bg-pink-100 w-[60px] mx-auto text-[10px] text-black rounded-sm"
+            className="bg-pink-100 w-[60px] py-1 mx-auto text-[10px] text-black rounded-sm"
           >
             주소복사
           </button>
@@ -104,7 +104,7 @@ export default function Footer() {
           </Text>
           <button
             onClick={() => handleCopy("서울 종로구 종로10길 16")}
-            className="bg-pink-100 w-[60px] mx-auto text-[10px] text-black rounded-sm"
+            className="bg-pink-100 w-[60px] py-1 mx-auto text-[10px] text-black rounded-sm"
           >
             주소복사
           </button>

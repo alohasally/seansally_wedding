@@ -17,9 +17,9 @@ export default function Sorry() {
         </div>
         <div className="text-xs text-center flex flex-col pb-10">
           <Text>
-            예식장이 협소하여 모든 친지,
+            예식장이 협소하여 모든 가족,
             <br />
-            지인분들을 초대드리지 못하는 점에
+            친지분들을 초대드리지 못하는 점에
             <br />
             대하여 깊은 양해를 구합니다
           </Text>
