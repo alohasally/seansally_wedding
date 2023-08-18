@@ -9,9 +9,9 @@ export default function Sorry() {
   return (
     <div className="space-y-4 flex flex-col items-center justify-center">
       <div className="relative w-[280px] flex flex-col items-center justify-center space-y-3">
-        <div className="w-[280px] overflow-x-hidden rounded-md">
+        <div className="w-[280px] rounded-md">
           <img
-            className="h-full object-center object-cover"
+            className="h-[500px] object-center object-cover"
             src="./img/12.webp"
           ></img>
         </div>
