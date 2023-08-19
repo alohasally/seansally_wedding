@@ -18,7 +18,7 @@ export default function Invitation() {
           <img src="./img/flower/flower_3.svg"></img>
         </div>
         <div className="w-full h-[200px] overflow-hidden flex items-end justify-center">
-          <img className="w-full" src="./img/01.webp"></img>
+          <img className="w-full" src="./img/01.jpg"></img>
         </div>
       </div>
     </div>

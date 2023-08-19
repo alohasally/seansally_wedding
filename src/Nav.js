@@ -43,7 +43,7 @@ export default function Nav() {
         <img src="./img/flower/flower_1.svg"></img>
         <img src="./img/flower/flower_2.svg"></img>
       </div>
-      <img className="w-[420px]" src="./img/00.webp"></img>
+      <img className="w-[420px]" src="./img/00.jpg"></img>
       <img
         className="absolute top-[85px] left-[50%] -translate-x-[50%]"
         src="./img/text_1.svg"

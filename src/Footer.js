@@ -47,7 +47,7 @@ export default function Footer() {
         </div>
 
         <div className="text-sm text-center flex flex-col pb-10 space-y-2">
-          <p className="text-xs">주차안내</p>
+          <p className="text-xs">&lt;주차안내&gt;</p>
           <div className="w-full h-[208px] overflow-hidden flex items-end justify-center">
             <img
               className="h-[208px]"
@@ -67,7 +67,7 @@ export default function Footer() {
           </button>
         </div>
         <div className="text-sm text-center flex flex-col space-y-2">
-          <p className="text-xs">식장안내</p>
+          <p className="text-xs">&lt;식장안내&gt;</p>
           <div className="w-full h-[208px] overflow-hidden flex items-end justify-center">
             <img
               className="h-[208px] rounded-lg"
@@ -124,12 +124,16 @@ export default function Footer() {
             className="absolute top-[40px] left-[50%] -translate-x-[50%] "
             src="./img/text_9.svg"
           ></img>
-          <img className="object-bottom" src="./img/10.webp"></img>
+          <img className="object-bottom" src="./img/10.jpg"></img>
         </div>
         <p className="text-xs text-center">We're waiting for you</p>
       </div>
-      <div className="flex items-center justify-center pb-4">
-        <img className="w-[120px]" src="./img/text_footer.svg"></img>
+      <div className="flex flex-col items-center justify-center pb-10">
+        <img
+          className="w-3 -rotate-90 opacity-80 pb-2"
+          src="./img/flower/flower_10.svg"
+        ></img>
+        <img className="w-[130px]" src="./img/text_footer.svg"></img>
       </div>
     </div>
   );
