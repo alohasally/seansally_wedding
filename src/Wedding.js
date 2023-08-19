@@ -40,7 +40,7 @@ export default function Wedding() {
         <div className="w-[300px] h-[350px] overflow-x-hidden rounded-md">
           <img
             className="h-full object-center object-cover"
-            src="./img/02.webp"
+            src="./img/02.jpg"
           ></img>
         </div>
       </div>

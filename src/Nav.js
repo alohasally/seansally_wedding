@@ -12,6 +12,15 @@ export default function Nav() {
     setIsOpen((isOpen) => !isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
+  const handleContentClick = () => {
+    // 메뉴 내용 클릭 시 메뉴 닫힘 상태 업데이트
+    setIsOpen(false);
+  };
+
   return (
     <div id="1" className="relative mx-auto">
       <div className="z-50 top-0 left-[50%] -translate-x-1/2  w-[420px] h-10 bg-black/80 fixed">
@@ -27,7 +36,10 @@ export default function Nav() {
             isOpen ? "fixed !z-999" : ""
           }`}
         >
-          <div className="flex flex-col items-center justify-center space-y-6 py-[80px]">
+          <div
+            className="flex flex-col items-center justify-center space-y-6 py-[80px]"
+            onClick={handleContentClick}
+          >
             <Text href="#1">Home</Text>
             <Text href="#2">Love Story</Text>
             <Text href="#3">Invitation</Text>
