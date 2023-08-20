@@ -12,7 +12,7 @@ export default function FullScreenModal({ imageSrc, onClose }) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex justify-center items-center bg-black bg-opacity-90 modal-background"
+      className="fixed inset-0 z-50 flex justify-center items-center bg-black bg-opacity-60 modal-background"
       onClick={handleBackgroundClick}
     >
       <div className="max-w-screen-lg w-full h-full relative">

@@ -39,7 +39,7 @@ export default function Nav() {
                 src="./img/lng.svg"
                 onClick={() => setIsChange(!isChange)}
               ></img>
-              <div className="absolute top-4 -left-4">
+              <div className="absolute top-4 -left-12">
                 {isChange && <HoverMenu changeLanguage={changeLanguage} />}
               </div>
             </div>
@@ -103,7 +103,7 @@ function HoverMenu({ changeLanguage }) {
   ];
 
   return (
-    <div className="w-[76px] pt-[8px] pb-[12px] px-[8px] backdrop-blur-[2px] rounded-md mt-3 bg-black/70">
+    <div className="w-[76px] pt-[8px] pb-[12px] px-[8px] backdrop-blur-[2px] rounded-md mt-3 bg-zinc-900/70 ">
       <ul className="flex flex-col justify-center space-y-[10px] list-none">
         {menus.map(({ title, onClick }, i) => (
           <li
