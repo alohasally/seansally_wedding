@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import FullscreenModal from "./FullscreenModal";
 
 // Import Swiper styles
 import "swiper/css";
@@ -12,6 +13,15 @@ import { FreeMode, Navigation, Thumbs, Autoplay } from "swiper/modules";
 
 export default function SlidePhotos() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [fullscreenImage, setFullscreenImage] = useState(null);
+  const openFullscreenModal = (imageSrc) => {
+    setFullscreenImage(imageSrc);
+  };
+
+  const closeFullscreenModal = () => {
+    setFullscreenImage(null);
+  };
+
   return (
     <div id="5" className="py-4 space-y-4">
       <img className="h-12 mx-auto" src="./img/text_5.svg"></img>
@@ -50,7 +60,10 @@ export default function SlidePhotos() {
           }}
         >
           <SwiperSlide className="flex items-center justify-center">
-            <div className="rounded-md w-full h-full">
+            <div
+              className="rounded-md w-full h-full"
+              onClick={() => openFullscreenModal("./img/03.jpg")}
+            >
               <img
                 className="rounded-md object-cover"
                 src="./img/03.jpg"
@@ -59,7 +72,10 @@ export default function SlidePhotos() {
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex items-center justify-center">
-            <div className="rounded-md w-full h-full">
+            <div
+              className="rounded-md w-full h-full"
+              onClick={() => openFullscreenModal("./img/04.jpg")}
+            >
               <img
                 className="rounded-md object-cover"
                 src="./img/04.jpg"
@@ -68,7 +84,10 @@ export default function SlidePhotos() {
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex items-center justify-center">
-            <div className="rounded-md w-full h-full">
+            <div
+              className="rounded-md w-full h-full"
+              onClick={() => openFullscreenModal("./img/05.jpg")}
+            >
               <img
                 className="rounded-md object-cover"
                 src="./img/05.jpg"
@@ -77,7 +96,10 @@ export default function SlidePhotos() {
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex items-center justify-center">
-            <div className="rounded-md w-full h-full">
+            <div
+              className="rounded-md w-full h-full"
+              onClick={() => openFullscreenModal("./img/09.jpg")}
+            >
               <img
                 className="rounded-md object-cover"
                 src="./img/09.jpg"
@@ -86,7 +108,10 @@ export default function SlidePhotos() {
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex items-center justify-center">
-            <div className="rounded-md w-full h-full">
+            <div
+              className="rounded-md w-full h-full"
+              onClick={() => openFullscreenModal("./img/06.jpg")}
+            >
               <img
                 className="rounded-md object-cover"
                 src="./img/06.jpg"
@@ -95,7 +120,10 @@ export default function SlidePhotos() {
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex items-center justify-center">
-            <div className="rounded-md w-full h-full">
+            <div
+              className="rounded-md w-full h-full"
+              onClick={() => openFullscreenModal("./img/07.jpg")}
+            >
               <img
                 className="rounded-md object-cover"
                 src="./img/07.jpg"
@@ -104,7 +132,10 @@ export default function SlidePhotos() {
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex items-center justify-center">
-            <div className="rounded-md w-full h-full">
+            <div
+              className="rounded-md w-full h-full"
+              onClick={() => openFullscreenModal("./img/08.jpg")}
+            >
               <img
                 className="rounded-md object-cover"
                 src="./img/08.jpg"
@@ -188,6 +219,12 @@ export default function SlidePhotos() {
           </SwiperSlide>
         </Swiper>
       </div>
+      {fullscreenImage && (
+        <FullscreenModal
+          imageSrc={fullscreenImage}
+          onClose={closeFullscreenModal}
+        />
+      )}
     </div>
   );
 }

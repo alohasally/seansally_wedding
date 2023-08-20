@@ -29,7 +29,7 @@ export default function Nav() {
   return (
     <div id="1" className="relative mx-auto">
       <div className="z-50 top-0 left-[50%] -translate-x-1/2 w-[420px] h-10 bg-black/80 fixed">
-        <div className="px-4 py-1.5 flex justify-between items-end ">
+        <div className="px-4 py-2.5 flex justify-between items-end ">
           <a href="#1">
             <img src="./img/sean_Sally.svg"></img>
           </a>
@@ -103,13 +103,7 @@ function HoverMenu({ changeLanguage }) {
   ];
 
   return (
-    <div
-      className="w-[76px] pt-[8px] pb-[12px] px-[8px] backdrop-blur-[2px] rounded-md mt-3"
-      style={{
-        background:
-          "linear-gradient(156.67deg, rgba(112, 112, 114, 0.6) 0.07%, rgba(112, 112, 114, 0.6) 0.08%, rgba(100, 97, 113, 0.222) 99.07%)",
-      }}
-    >
+    <div className="w-[76px] pt-[8px] pb-[12px] px-[8px] backdrop-blur-[2px] rounded-md mt-3 bg-black/70">
       <ul className="flex flex-col justify-center space-y-[10px] list-none">
         {menus.map(({ title, onClick }, i) => (
           <li
