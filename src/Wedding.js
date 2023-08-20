@@ -1,11 +1,13 @@
 import React from "react";
 import tw from "tailwind-styled-components";
+import { useTranslation } from "react-i18next";
 
 const Text = tw.text`
     text-sm leading-6
 `;
 
 export default function Wedding() {
+  const { t } = useTranslation();
   return (
     <div className="py-12 space-y-4 flex flex-col items-center justify-center">
       <div className="relative w-[350px] h-[380px] flex items-center justify-center">
@@ -46,28 +48,28 @@ export default function Wedding() {
       </div>
       <div className="text-sm text-center flex flex-col pb-10">
         <Text>
-          저희가 인생을 함께 <br />
-          시작하는 날에
+          {t("story.7")} <br />
+          {t("story.8")}
           <br />
-          와주셔서 축복해주세요
+          {t("story.9")}
         </Text>
       </div>
       <div className="bg-white/10 px-4 pt-2 pb-4 rounded-md ">
         <div className="flex items-center justify-center pb-5">
           <img className="pt-4" src="./img/line.svg"></img>
         </div>
-        <div className="space-y-4 flex flex-col items-start justify-center">
+        <div className="space-y-4 flex flex-col items-center justify-center">
           <div className="space-x-3">
-            <Text className="text-xs">에리케 플로레스</Text>
-            <Text className="text-xs pr-1">테리 플로레스</Text>
-            <Text className="text-white/80 text-xs">의 아들</Text>
-            <Text>션</Text>
+            <Text className="text-xs">{t("name.1")}</Text>
+            <Text className="text-xs pr-1">{t("name.2")}</Text>
+            <Text className="text-white/80 text-xs">{t("name.3")}</Text>
+            <Text>{t("name.4")}</Text>
           </div>
           <div className="space-x-2">
-            <Text className="px-6 text-xs">이운형</Text>
-            <Text className="px-5 text-xs">이선옥</Text>
-            <Text className="px-2 text-xs text-white/80">의 딸</Text>
-            <Text>선형</Text>
+            <Text className="px-6 text-xs">{t("name.5")}</Text>
+            <Text className="px-5 text-xs">{t("name.6")}</Text>
+            <Text className="px-2 text-xs text-white/80">{t("name.7")}</Text>
+            <Text>{t("name.8")}</Text>
           </div>
         </div>
       </div>

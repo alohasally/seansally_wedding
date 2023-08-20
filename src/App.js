@@ -19,7 +19,7 @@ function App() {
     // Simulate image loading delay
     setTimeout(() => {
       setIsLoading(false);
-    }, 2500); // Change this value to match your actual image loading time
+    }, 1500); // Change this value to match your actual image loading time
   }, []);
 
   return (

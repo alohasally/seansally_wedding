@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useTranslation } from "react-i18next";
 
 // Import Swiper styles
 import "swiper/css";
@@ -19,6 +20,7 @@ const Text = tw.text`
 const images = ["img_1.webp", "img_2.webp", "img_3.webp"];
 
 export default function Story() {
+  const { t } = useTranslation();
   return (
     <div id="3" className="py-4 space-y-6">
       <img className="h-12 mx-auto" src="./img/text_3.svg"></img>
@@ -33,8 +35,8 @@ export default function Story() {
         ></img>
         <div className="text-sm text-center flex flex-col pb-10">
           <Text>
-            저희는 미국 미시간과 한국 서울이라는
-            <br /> 지구 반대편에서 태어나고 자라서
+            {t("story.1")}
+            <br /> {t("story.2")}
           </Text>
         </div>
       </div>
@@ -112,16 +114,14 @@ export default function Story() {
         </Swiper>
       </div>
       <div className="text-center flex flex-col">
-        <p className="text-xs text-white/70">
-          (이미지는 슬라이드해서 넘겨주세요)
-        </p>
+        <p className="text-xs text-white/70">{t("story.10")}</p>
       </div>
       <div className="text-sm text-center flex flex-col pb-10">
         <Text>
-          태국 치앙마이에서 만났고 <br />
-          어느덧 5년이 흘렀습니다. <br />
-          그리고 이제 인생을 함께 하기로 <br />
-          약속했습니다.
+          {t("story.3")} <br />
+          {t("story.4")} <br />
+          {t("story.5")} <br />
+          {t("story.6")}
           <br />
         </Text>
       </div>

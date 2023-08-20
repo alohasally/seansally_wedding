@@ -1,11 +1,13 @@
 import React from "react";
 import tw from "tailwind-styled-components";
+import { useTranslation } from "react-i18next";
 
 const Text = tw.text`
     text-xs leading-5
 `;
 
 export default function Sorry() {
+  const { t } = useTranslation();
   return (
     <div className="space-y-4 flex flex-col items-center justify-center">
       <div className="relative w-[280px] flex flex-col items-center justify-center space-y-3">
@@ -17,11 +19,11 @@ export default function Sorry() {
         </div>
         <div className="text-xs text-center flex flex-col pb-10">
           <Text>
-            예식장이 협소하여 모든 가족,
+            {t("sorry.1")}
             <br />
-            친지분들을 초대드리지 못하는 점에
+            {t("sorry.2")}
             <br />
-            대하여 깊은 양해를 구합니다
+            {t("sorry.3")}
           </Text>
         </div>
       </div>

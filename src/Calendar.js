@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import tw from "tailwind-styled-components";
+import { useTranslation } from "react-i18next";
 
 const Count = tw.h4`
     text-xl pr-1    
@@ -13,6 +14,7 @@ const Text = tw.text`
 `;
 
 export default function Calendar() {
+  const { t } = useTranslation();
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [mins, setMins] = useState(0);
@@ -45,7 +47,7 @@ export default function Calendar() {
     <div id="4" className="py-12 space-y-4">
       <img className="h-12 mx-auto" src="./img/text_4.svg"></img>
       <div className="flex justify-center items-center">
-        <Text className="">2023년 10월 3일 오후 1시</Text>
+        <Text className="">{t("calendar.1")}</Text>
       </div>
       <div className="flex items-center justify-center">
         <img className="w-[320px]" src="./img/calendar.svg"></img>
@@ -53,23 +55,26 @@ export default function Calendar() {
       <div className="flex items-center justify-center space-x-2">
         <div className="flex flex-row justify-center items-center">
           <Count>{days}</Count>
-          <Smalltext>일</Smalltext>
+          <Smalltext>{t("calendar.2")}</Smalltext>
         </div>
         <div className="flex flex-row justify-center items-center">
           <Count>{hours}</Count>
-          <Smalltext>시</Smalltext>
+          <Smalltext>{t("calendar.3")}</Smalltext>
         </div>
         <div className="flex flex-row justify-center items-center">
           <Count>{mins}</Count>
-          <Smalltext>분</Smalltext>
+          <Smalltext>{t("calendar.4")}</Smalltext>
         </div>
         <div className="flex flex-row justify-center items-center">
           <Count>{secs}</Count>
-          <Smalltext>초</Smalltext>
+          <Smalltext>{t("calendar.5")}</Smalltext>
         </div>
       </div>
       <div className="text-sm text-center flex flex-col pb-10">
-        <Text>션과 선형의 결혼식이 {days}일 남았습니다</Text>
+        <Text>
+          {t("calendar.6")} {days}
+          {t("calendar.7")}
+        </Text>
       </div>
     </div>
   );
