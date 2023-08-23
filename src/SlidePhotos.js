@@ -143,6 +143,30 @@ export default function SlidePhotos() {
               ></img>
             </div>
           </SwiperSlide>
+          <SwiperSlide className="flex items-center justify-center">
+            <div
+              className="rounded-md w-full h-full"
+              onClick={() => openFullscreenModal("./img/family_1.jpg")}
+            >
+              <img
+                className="rounded-md object-cover"
+                src="./img/family_1.jpg"
+                alt=""
+              ></img>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="flex items-center justify-center">
+            <div
+              className="rounded-md w-full h-full"
+              onClick={() => openFullscreenModal("./img/family_2.jpg")}
+            >
+              <img
+                className="rounded-md object-cover"
+                src="./img/family_2.jpg"
+                alt=""
+              ></img>
+            </div>
+          </SwiperSlide>
         </Swiper>
         <div className="py-1"></div>
         <Swiper
@@ -213,6 +237,30 @@ export default function SlidePhotos() {
               <img
                 className="rounded-md object-cover"
                 src="./img/08.jpg"
+                alt=""
+              ></img>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="flex items-center justify-center">
+            <div
+              className="rounded-md w-full h-full"
+              onClick={() => openFullscreenModal("./img/family_1.jpg")}
+            >
+              <img
+                className="rounded-md object-cover"
+                src="./img/family_1.jpg"
+                alt=""
+              ></img>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="flex items-center justify-center">
+            <div
+              className="rounded-md w-full h-full"
+              onClick={() => openFullscreenModal("./img/family_2.jpg")}
+            >
+              <img
+                className="rounded-md object-cover"
+                src="./img/family_2.jpg"
                 alt=""
               ></img>
             </div>

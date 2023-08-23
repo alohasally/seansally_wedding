@@ -66,10 +66,10 @@ export default function Wedding() {
             <Text>{t("name.4")}</Text>
           </div>
           <div className="space-x-2">
-            <Text className="px-6 text-xs">{t("name.5")}</Text>
-            <Text className="px-5 text-xs">{t("name.6")}</Text>
-            <Text className="px-2 text-xs text-white/80">{t("name.7")}</Text>
-            <Text>{t("name.8")}</Text>
+            <Text className="w-3 pr-4 text-xs">{t("name.5")}</Text>
+            <Text className="w-3 pr-3 text-xs">{t("name.6")}</Text>
+            <Text className="pr-2 text-xs text-white/80">{t("name.7")}</Text>
+            <Text className="w-5">{t("name.8")}</Text>
           </div>
         </div>
       </div>
