@@ -30,7 +30,7 @@ export default function Footer() {
           >
             {t("location.2")}
           </button>
-         // <KakaoMap />
+        {/*<KakaoMap /> *}
           <div className="w-[252px] mx-auto space-y-6 pt-8">
             <div className="flex flex-row items-center justify-between">
               <Text className="text-xs">{t("location.3")}</Text>
